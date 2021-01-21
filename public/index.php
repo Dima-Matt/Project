@@ -14,7 +14,7 @@ $qStr = $_SERVER['QUERY_STRING'];
 Router::add(['^$' => ['controller' => 'Main', 'action' => 'index']]);
 Router::add(['^(?P<controller>[a-z0-9-]+)/?(?P<action>[a-z0-9-]+)?$' => []]);
 
-
+echo 'for you git!';
 
 pr(Router::$routers);
 
