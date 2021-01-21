@@ -4,10 +4,26 @@
 namespace app\controllers;
 
 
-class MainController
+use system\core\Controller;
+
+class MainController extends Controller
 {
-    public function __construct()
+
+
+    public function indexAction()     //action - там где вызывается класс
     {
-        echo 'Main';
+        pr($this->route);
+        echo 'Main::index';
+    }
+
+    public function testAction()
+    {
+        pr($this->route);
+        echo 'Main::test';
+    }
+
+    public function check()
+    {
+
     }
 }
